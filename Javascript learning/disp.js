@@ -1,3 +1,5 @@
+//for repetetive use
+
 const GameState = {
     NumG: "",
     CurrentGameNo: 1,
@@ -5,6 +7,8 @@ const GameState = {
     CurrentGuessNo: 1,
     Gapping: "-----",
 }
+
+//For all the results
 
 class Results{
     constructor(){
@@ -20,6 +24,8 @@ class Results{
         this.turnOff = "none";
     }
 
+   //Shows the game screen and turn off all
+
     ClearResults(){
         this.Win.style.display = this.turnOff;
         this.Quit.style.display = this.turnOff;
@@ -30,13 +36,15 @@ class Results{
         this.AverageStat.style.display = this.turnOff;
         this.Game.style.display = this.turnOn;
     }
-
+   //Show only Quit screen
     Quits(){
         this.Game.style.display = this.turnOff;
         this.Quit.style.display = this.turnOn;
         this.Answer.style.display = this.turnOn;
         this.Re.style.display = this.turnOn;
     }
+
+   //Show only Win screen 
 
     Winner(answer){
         if (answer){
@@ -46,6 +54,8 @@ class Results{
             this.Re.style.display = this.turnOn;
         }
     }
+
+   //Shows the average stats
 
     GameOver(){
         this.ClearResults();
@@ -57,5 +67,7 @@ class Results{
         this.AverageStat.innerHTML = "You averaged " + AverageMove + " move(s)"
     }
 }
+
+//set it to a variable
 
 const Time = new Results();
