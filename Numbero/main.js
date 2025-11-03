@@ -1,3 +1,4 @@
+//Does the minimum for the game to work
 function Test(){
     randomNumber = Math.round(Math.random() * 100);
     EAnswer.textContent = "The answer is "+ randomNumber;
@@ -21,6 +22,7 @@ function Test(){
 
 }
 
+//Checks guess
 function getGuess(){
     
     const newRow = document.createElement("tr");
@@ -41,6 +43,8 @@ function getGuess(){
         guessDifferenceW = "Lower";
     }
 
+   //Appends and shows it to the screen
+
     newGuessNo.textContent = CurrentGuessNo;
     CurrentGuess.textContent = guess;
     Gapping.textContent = "-------";
@@ -57,6 +61,7 @@ function getGuess(){
     OverallGuessNo++
     Input.value = "";
     
+   //Ends if the answer is right
 
     if (guessDifferenceW == "Exact"){
         Win.style.display = "flex";
@@ -68,6 +73,7 @@ function getGuess(){
     }
 }
 
+//Loser function
 function QuitGame(){
     GameOver.style.display = "flex";
     FinalAnswer.style.display = "flex";
@@ -75,11 +81,13 @@ function QuitGame(){
     Game.style.display = "none";
 }
 
+//Play again
 function Restart(){
     CurrentGameNo++
     Test();
 }
 
+//Quit entirely after session.Shows overall stats
 function GameStats(){
     let AverageStats = OverallGuessNo / CurrentGameNo;
     Overall.style.display = "flex";
@@ -93,5 +101,6 @@ function GameStats(){
     AvgStats.textContent = "You averaged "+AverageStats+" move(s)";
 }
 
+//Runs once to initialize
 Test();
 
