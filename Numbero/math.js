@@ -1,3 +1,4 @@
+//Necessary variables
 let randomNumber = null
 const Input = document.getElementById("InputBox");
 const Game = document.getElementById("Game");
