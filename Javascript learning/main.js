@@ -1,6 +1,10 @@
+//Gets the elements from HTML
+
 const Guess = document.getElementById("Guess");
 const GuessTable = document.getElementById("GuessTable");
 const RightNow = document.getElementById("CurrentGuess");
+
+//Class for game
 
 class NumberGame{
     constructor(){
@@ -41,6 +45,8 @@ function createCell(content){
     td.innerHTML = content;
     return td;
 }
+
+//Checks guess
 
 function CheckGuess(){
     const newRow = document.createElement("tr");
