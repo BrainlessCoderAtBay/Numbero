@@ -1,0 +1,71 @@
+body{
+    background-color:rgb(254, 254, 142);
+}
+
+#Title{
+    font-size: 60px;
+    text-align: center;
+}
+
+#Guesses,tr,td{
+    font-size: 25px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 650px;
+
+}
+tr{
+    padding: 10px,20px;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+}
+
+#GuessSubmit{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    height: 50px;
+    font-size: 25px;
+    gap: 10px;
+    text-align: center;
+}
+
+#InputBox{
+    width: 500px;
+}
+
+#Count, #Answer, #Win, #Quit{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#Re, #Answer, #Win, #Quit{
+    display: none;
+}
+
+#Re{
+    margin: 0 auto;
+    justify-content: center;
+}
+#Rerun{
+    width: 500px;
+    height: 50px;
+    font-size: 25px;
+}
+
+#quit{
+    width: 60px;
+}
+
+#GameStatistics , #AverageStat {
+    display: none;
+    justify-content: center;
+    margin: 0 auto;
+}

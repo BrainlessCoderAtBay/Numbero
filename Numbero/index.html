@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="math.js" defer></script>
+    <script src="main.js" defer></script>
+    <title>Numbero</title>
+</head>
+<body>
+    <h1 id="Title">Numbero</h1>
+    <br>
+    <div id="Game">
+
+        <div id="GuessSubmit">
+            <input type="number" id="InputBox"> 
+            <button id="submit" onclick="getGuess()">Submit</button>
+            <button id="quit" onclick="QuitGame()">Quit</button>
+        </div>
+        
+        <br>
+        <div id="Guesses">
+            <table id="GuessTable">
+                <tr>
+                    <td>Guess</td>
+                    <td>-------</td>
+                    <td>Number</td>
+                    <td>-------</td>
+                    <td>Difference</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+    <div id="Win">
+        <h1>You Won!</h1>
+    </div>
+    <div id="Quit">
+        <h1>You gave up</h1>
+    </div>
+    <div id="Answer">
+        <h1 id="EAnswer"></h1>
+
+    </div>
+    <div id="Count">
+        <h2 id="Attempts"></h2> 
+    </div>
+    
+    <div id="Re">
+        <button id="Rerun" onclick="Restart()">Rerun</button>
+        <button id="Endgame" onclick="GameStats()">End Game</button>
+    </div>
+
+    <div id="GameStatistics">
+        <h1 id="Stats"></h1>
+    </div>
+    <div id="AverageStat">
+        <h2 id="Average"></h2>
+    </div>
+    
+</body>
+</html>

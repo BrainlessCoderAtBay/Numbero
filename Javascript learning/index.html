@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="disp.js" defer></script>
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="TitleName">Numbero</h1>
+    <div id="Game">
+        <input type="number" id="Guess">
+            <div id="Butt">
+                <button onclick="CheckGuess()">Check</button>
+                <button id="Rerun" onclick="Time.Quits()">Quit</button>
+            </div>
+            <div id="CGuess">
+                <table id="CurrentGuess">
+                    <tr>
+                        <td>Guess</td>
+                        <td>-----</td>
+                        <td>Number</td>
+                        <td>-----</td>
+                        <td>Difference</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="InfoTable">
+                <table id="GuessTable">
+                    <tr>
+                        <td>Guess</td>
+                        <td>-----</td>
+                        <td>Number</td>
+                        <td>-----</td>
+                        <td>Difference</td>
+                    </tr>
+                </table>
+            </div> 
+    </div>
+    <div id="Final">
+        <h1 id="Win">You Won!</h1>
+        <h1 id="Quit">You gave up</h1>
+        <h1 id="Answer"></h1>
+        <h2 id="Attempts">yy</h2> 
+        <div id="Re">
+            <button id="Rerun" onclick="Rerun()">Rerun</button>
+            <button id="Endgame" onclick="Time.GameOver()">End Game</button>
+        </div>
+        <h1 id="GameStats"></h1>
+        <h2 id="AverageStat"></h2>
+    </div>
+    
+</body>
+</html>

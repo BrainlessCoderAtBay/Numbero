@@ -1,0 +1,54 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+#TitleName{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 9vh;
+}
+#InfoTable,#CGuess,tr,td{
+    font-size: 25px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 750px;
+}
+tr{
+    padding: 10px,20px;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+}
+#Guess{
+    font-size: 25px;
+    display: flex;
+    width: 750px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#Butt{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 750px;
+    padding: 10px;
+}
+button{
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+#Final{
+    display: block;
+    text-align: center;
+}
+
+#Win,#Quit,#Answer,#Attempts,#Re,#GameStats,#AverageStat{
+    display: none;
+}
+
